@@ -1,3 +1,80 @@
 <resources>
     <string name="app_name">ScoutingApp2022Remake</string>
+    <string name="dynamic_placeholder">#Dynamic placeholder</string>
+    <string name="title">Robototes\nData Analysis</string>
+    <string name="clock_hint">00:24:12</string>
+    <string name="logo_description">R after two slashes</string>
+    <string name="start">Start</string>
+    <string name="match_num_hint">Match #</string>
+    <string name="team_num_hint">Team #</string>
+    <string name="name_hint">Name</string>
+    <string name="reminder">Remember to Sanitize Regularly</string>
+    <string-array name="splashes">
+        <item>DarkTotes Confirmed</item>
+        <item>2411.5</item>
+        <item>BozoTotes Made</item>
+        <item>Wash Your Hands</item>
+        <item>Remember To Enter Your Name</item>
+        <item>#BozoTotes</item>
+        <item>#DarkTotes</item>
+        <item>Robototes NFT when?</item>
+        <item>Get Yeet</item>
+        <item>254 Herbs And Spices</item>
+        <item>Water Game?</item>
+        <item>Lava Game?</item>
+        <item>“Hey Babe, Wanna Macarena”</item>
+        <item>Do The Continental Drift</item>
+        <item>Ratatouille System Supremacy</item>
+        <item>Can You Hear That Smell?</item>
+        <item>RIP Bozo More Like Tip Bozo</item>
+        <item>Don’t Run In The Shop Or Pit</item>
+        <item>Sponsored By The Clowns</item>
+        <item>Made by Clowns</item>
+        <item>“I’m A Bozo” - Mrs. Herzog</item>
+        <item>Long Live The Bordie</item>
+        <item>Live Laugh Bordie</item>
+        <item>Teal Is The Best Weezer Album</item>
+        <item>Lightning McQueen Is My Queen</item>
+        <item>Pinkerton 1/10 Fantano</item>
+        <item>Who Broke The Nutella Knife?</item>
+        <item>God This Potato Is So J U I C Y</item>
+        <item>Remember To Sleep</item>
+        <item>Not Very Sigma To Have Stigma</item>
+        <item>Keep It GP</item>
+        <item>Poof</item>
+        <item>SquishSquish</item>
+        <item>Socks Are Foot Gloves</item>
+        <item>Gloves Are Hand Socks</item>
+        <item>Duct Tape, Zip Ties, And Dreams</item>
+        <item>Spare Tires Save Lives</item>
+        <item>Spare Tires, save lives</item>
+        <item>Spare Lives, Save Tires</item>
+        <item>Programming Guide: Ctrl C / Ctrl V</item>
+        <item>Built by StackOverflow</item>
+        <item>Cooked Raw Cookie Dough</item>
+        <item>Scouting’s fun, recruit your friends</item>
+        <item>“Functional” code</item>
+        <item>Infinite Recharge 2: Infiniter Recharge</item>
+        <item>Don’t touch smooth Bananas</item>
+        <item>Robototes react</item>
+        <item>In need of lube</item>
+        <item>"4911 Jack in the Bot"</item>
+        <item>"3636 the Journals"</item>
+        <item>Ask Evan 1899’s name</item>
+        <item>Swanky</item>
+        <item>Sponsored by Swank Drive Specialties</item>
+        <item>"Programming will havbe one week with the robot" lmao</item>
+        <item>Never Trust the Programmers</item>
+        <item>Never Trust a Mech Kid</item>
+        <item>Look Before you Yeet</item>
+        <item>oooooooooooooooh YUP</item>
+        <item>Ball Drive When</item>
+        <item>Parker Was Here</item>
+        <item>Cole Was Here</item>
+        <item>Dominic (Salami) Was Here</item>
+        <item>Remmy And Chill</item>
+        <item>7 &amp; 5/8</item>
+        <item>Good at Fitting Small Things in Small Places</item>
+        <item>"The car is leaving at 7:15" (Leaves 7:45)</item>
+    </string-array>
 </resources>

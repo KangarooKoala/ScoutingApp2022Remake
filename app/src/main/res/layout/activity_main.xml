@@ -4,15 +4,153 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
+    android:contentDescription="@string/logo_description"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/title_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="124dp"
+        android:text="@string/title"
+        android:textAlignment="center"
+        android:textSize="85sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextClock
+        android:id="@+id/clock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/red_circle"
+        android:format12Hour="HH:mm:ss"
+        android:format24Hour="HH:mm:ss"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="15dp"
+        android:hint="@string/clock_hint"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/title_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="187dp"
+        android:layout_height="168dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="28dp"
+        android:contentDescription="@string/logo_description"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/splash_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxEms="27"
+        android:rotation="-2.229"
+        android:text="@string/dynamic_placeholder"
+        android:textAlignment="center"
+        android:textColor="@color/splash_text_yellow"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="@+id/title_view"
+        app:layout_constraintEnd_toStartOf="@+id/splash_center"
+        app:layout_constraintStart_toStartOf="@+id/splash_center"
+        app:layout_constraintTop_toBottomOf="@+id/title_view"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/splash_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="821dp" />
+
+    <android.widget.Button
+        android:id="@+id/start_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:width="500dp"
+        android:height="100dp"
+        android:background="@drawable/selectable"
+        android:text="@string/start"
+        android:textColor="@color/dark_text"
+        android:textSize="72sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_view" />
+
+    <EditText
+        android:id="@+id/match_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:width="250dp"
+        android:background="@drawable/selectable"
+        android:ems="10"
+        android:hint="@string/match_num_hint"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:minHeight="50dp"
+        android:paddingHorizontal="10dp"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/start_button" />
+
+    <EditText
+        android:id="@+id/team_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:width="250dp"
+        android:background="@drawable/selectable"
+        android:ems="10"
+        android:hint="@string/team_num_hint"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:minHeight="50dp"
+        android:paddingHorizontal="10dp"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/match_number" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="@string/reminder"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/team_number" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="80dp"
+        android:width="250dp"
+        android:background="@drawable/selectable"
+        android:ems="10"
+        android:hint="@string/name_hint"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:minHeight="50dp"
+        android:paddingHorizontal="10dp"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
