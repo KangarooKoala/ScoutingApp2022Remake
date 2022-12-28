@@ -3,4 +3,7 @@
     <dimen name="above_button_elevation">2dp</dimen>
     <dimen name="undo_height">120dp</dimen>
     <dimen name="undo_width">120dp</dimen>
+    <dimen name="abort_height">35dp</dimen>
+    <dimen name="abort_width">150dp</dimen>
+    <dimen name="corner_radius">5dp</dimen>
 </resources>
