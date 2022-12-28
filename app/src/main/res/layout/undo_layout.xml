@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/undo_layout"
+    android:layout_width="@dimen/undo_width"
+    android:layout_height="@dimen/undo_height">
+
+    <android.widget.Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/selectable"
+        android:contentDescription="@string/undo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/undo_text"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/above_button_elevation"
+        android:importantForAccessibility="no"
+        android:text="@string/undo"
+        android:textColor="@color/dark_text"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/undo_image"
+        android:layout_width="75dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="1dp"
+        android:elevation="@dimen/above_button_elevation"
+        android:importantForAccessibility="no"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/undo_text"
+        app:srcCompat="@drawable/undo_original" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

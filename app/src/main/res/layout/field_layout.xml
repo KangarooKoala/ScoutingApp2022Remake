@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <ImageView
+        android:id="@+id/field"
+        android:layout_width="905dp"
+        android:layout_height="441dp"
+        android:contentDescription="@string/field_description"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/field" />
+
+    <TextView
+        android:id="@+id/shot_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/dark_gray"
+        android:padding="8dp"
+        android:text="@string/num_shots"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toStartOf="@+id/field"
+        app:layout_constraintTop_toTopOf="@+id/field" />
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/undo_layout"
+        android:layout_width="@dimen/undo_width"
+        android:layout_height="@dimen/undo_height"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toStartOf="@+id/field"
+        app:layout_constraintTop_toBottomOf="@+id/shot_display" />
+
+    <ToggleButton
+        android:id="@+id/high_goal"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="52dp"
+        android:background="#FF888888"
+        android:text="@string/high_goal"
+        android:textColor="@color/dark_text"
+        android:textOff="@string/high_goal"
+        android:textOn="@string/high_goal"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/field"
+        app:layout_constraintTop_toBottomOf="@+id/include" />
+
+    <ToggleButton
+        android:id="@+id/low_goal"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#FF888888"
+        android:text="@string/low_goal"
+        android:textColor="@color/dark_text"
+        android:textOff="@string/low_goal"
+        android:textOn="@string/low_goal"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/high_goal"
+        app:layout_constraintTop_toBottomOf="@+id/high_goal" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

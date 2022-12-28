@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clip xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:clipOrientation="horizontal"
+    android:gravity="center">
+    <clip
+        android:clipOrientation="vertical"
+        android:gravity="center">
+        <scale
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawable="@drawable/undo_original"
+            android:level="1"
+            android:scaleWidth="40%"
+            android:scaleHeight="40%"
+            android:scaleGravity="center"
+            tools:ignore="UnusedAttribute" />
+    </clip>
+</clip>
