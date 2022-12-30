@@ -12,4 +12,7 @@
     <color name="splash_text_yellow">#FFFAF568</color>
     <color name="dark_text">#FF323232</color>
     <color name="dark_gray">#FF383838</color>
+    <color name="light_gray">#FF515151</color>
+    <color name="slider_thumb_color">#FF282828</color>
+    <color name="transparent">#00000000</color>
 </resources>

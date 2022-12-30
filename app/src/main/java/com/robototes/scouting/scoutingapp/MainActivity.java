@@ -9,13 +9,26 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.SeekBar;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+    private enum Stage {
+        AUTO(R.string.auto_stage), TELEOP(R.string.teleop_stage);
+
+        public final int nameId;
+
+        Stage(int nameId) {
+            this.nameId = nameId;
+        }
+    }
+
     private static <T> T getRandFromArray(@NonNull T[] arr) {
         int index = (int) (arr.length * Math.random());
         return arr[index];
     }
+
+    private Stage stage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,16 +56,31 @@ public class MainActivity extends AppCompatActivity {
 
     private void loadAuto() {
         setContentView(R.layout.auto_layout);
-
-        Button abortButton = (Button) findViewById(R.id.abort_button);
-        abortButton.setOnClickListener((View view) -> {
-            loadMenu();
-        });
-        CheckBox autoLine = (CheckBox) findViewById(R.id.auto_line_checkbox);
-        Button toTeleopButton = (Button) findViewById(R.id.to_teleop_button);
+        stage = Stage.AUTO;
 
         loadField();
         loadMatchInfo();
+
+        CheckBox autoLine = (CheckBox) findViewById(R.id.auto_line_checkbox);
+        Button toTeleopButton = (Button) findViewById(R.id.to_teleop_button);
+        toTeleopButton.setOnClickListener((View view) -> {
+            loadTeleop();
+        });
+    }
+
+    private void loadTeleop() {
+        setContentView(R.layout.teleop_layout);
+        stage = Stage.TELEOP;
+
+        loadField();
+        loadMatchInfo();
+
+        Button doneButton = (Button) findViewById(R.id.done_button);
+        doneButton.setOnClickListener((View view) -> {
+            loadMenu();
+        });
+        SeekBar climbSlider = (SeekBar) findViewById(R.id.climb_slider);
+        SeekBar defenseSlider = (SeekBar) findViewById(R.id.defense_slider);
     }
 
     private void loadField() {
@@ -64,8 +92,12 @@ public class MainActivity extends AppCompatActivity {
 
     private void loadMatchInfo() {
         Button abortButton = (Button) findViewById(R.id.abort_button);
+        abortButton.setOnClickListener((View view) -> {
+            loadMenu();
+        });
         TextView matchNum = (TextView) findViewById(R.id.match_num_display);
         TextView teamNum = (TextView) findViewById(R.id.team_num_display);
-        TextView stage = (TextView) findViewById(R.id.stage);
+        TextView stageView = (TextView) findViewById(R.id.stage);
+        stageView.setText(getString(stage.nameId));
     }
 }

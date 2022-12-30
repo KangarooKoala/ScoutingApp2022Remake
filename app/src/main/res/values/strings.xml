@@ -19,6 +19,15 @@
     <string name="auto_stage">Auto</string>
     <string name="auto_line">Leaves Auto Line:</string>
     <string name="to_teleop">Teleop</string>
+    <string name="teleop_stage">Teleop</string>
+    <string name="done">done</string>
+    <string name="climb">Climb level: %d</string>
+    <string name="climb_slider_description">Climb slider</string>
+    <string name="climb_slider_min">0</string>
+    <string name="climb_slider_max">4</string>
+    <string name="defense">Defence rating: %d</string>
+    <string name="defense_slider_min">0</string>
+    <string name="defense_slider_max">5</string>
     <string name="reminder">Remember to Sanitize Regularly</string>
     <string-array name="splashes">
         <item>DarkTotes Confirmed</item>
