@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:elevation="@dimen/above_button_elevation">
+
+    <include
+        layout="@layout/field_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <include
+        layout="@layout/match_info_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/auto_line_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="404dp"
+        android:background="@color/dark_gray"
+        android:paddingStart="10dp"
+        android:paddingTop="45dp"
+        android:paddingEnd="150dp"
+        android:paddingBottom="45dp"
+        android:text="@string/auto_line"
+        android:textScaleX="0.7"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/auto_line_checkbox"
+        android:layout_width="98dp"
+        android:layout_height="91dp"
+        android:layout_marginEnd="30dp"
+        android:scaleX="3"
+        android:scaleY="3"
+        app:buttonIcon="@drawable/check_box"
+        app:layout_constraintBottom_toBottomOf="@+id/auto_line_text"
+        app:layout_constraintEnd_toEndOf="@+id/auto_line_text"
+        app:layout_constraintTop_toTopOf="@+id/auto_line_text" />
+
+    <android.widget.Button
+        android:id="@+id/to_teleop_button"
+        android:layout_width="300dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="80dp"
+        android:background="@drawable/selectable"
+        android:contentDescription="@string/to_teleop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/to_teleop_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/above_button_elevation"
+        android:importantForAccessibility="no"
+        android:padding="20dp"
+        android:text="@string/to_teleop"
+        android:textColor="#323232"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/to_teleop_button"
+        app:layout_constraintStart_toStartOf="@+id/to_teleop_button"
+        app:layout_constraintTop_toTopOf="@+id/to_teleop_button" />
+
+    <ImageView
+        android:id="@+id/to_teleop_arrow"
+        android:layout_width="68dp"
+        android:layout_height="69dp"
+        android:layout_margin="20dp"
+        android:elevation="@dimen/above_button_elevation"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="@+id/to_teleop_button"
+        app:layout_constraintEnd_toEndOf="@+id/to_teleop_button"
+        app:layout_constraintTop_toTopOf="@+id/to_teleop_button"
+        app:srcCompat="@drawable/arrow" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

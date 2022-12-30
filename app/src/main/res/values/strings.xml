@@ -11,13 +11,14 @@
     <string name="num_shots">Shots: %d</string>
     <string name="field_description">2022 game field</string>
     <string name="undo">Undo</string>
-    <string name="undo_description">Undo</string>
     <string name="high_goal">High</string>
     <string name="low_goal">Low</string>
     <string name="abort">abort</string>
     <string name="match_num_display">Match: %d</string>
     <string name="team_num_display">%d</string>
     <string name="auto_stage">Auto</string>
+    <string name="auto_line">Leaves Auto Line:</string>
+    <string name="to_teleop">Teleop</string>
     <string name="reminder">Remember to Sanitize Regularly</string>
     <string-array name="splashes">
         <item>DarkTotes Confirmed</item>
