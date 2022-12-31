@@ -8,11 +8,10 @@
 
     <ImageView
         android:id="@+id/logo2"
-        android:layout_width="156dp"
-        android:layout_height="168dp"
-        android:layout_marginStart="70dp"
-        android:layout_marginTop="60dp"
+        android:layout_width="130dp"
+        android:layout_height="147dp"
         android:contentDescription="@string/logo_description"
+        android:scaleY="1.3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo"
@@ -20,27 +19,24 @@
 
     <android.widget.Button
         android:id="@+id/abort_button"
-        android:layout_width="150dp"
-        android:layout_height="35dp"
-        android:layout_marginBottom="-20dp"
+        android:layout_width="112dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="5dp"
         android:background="@drawable/abort_button"
         android:contentDescription="@string/abort"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/logo2"
         app:layout_constraintEnd_toEndOf="@+id/logo2"
-        app:layout_constraintStart_toStartOf="@+id/logo2" />
+        app:layout_constraintTop_toTopOf="@+id/logo2" />
 
     <TextView
         android:id="@+id/abort_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
+        android:layout_marginStart="8dp"
         android:elevation="@dimen/above_button_elevation"
         android:importantForAccessibility="no"
         android:text="@string/abort"
         android:textColor="#000000"
-        android:textSize="32sp"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@id/abort_button"
         app:layout_constraintStart_toStartOf="@id/abort_button"
@@ -48,9 +44,9 @@
 
     <ImageView
         android:id="@+id/abort_x"
-        android:layout_width="25dp"
-        android:layout_height="24dp"
-        android:layout_marginEnd="10dp"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginEnd="8dp"
         android:elevation="@dimen/above_button_elevation"
         android:importantForAccessibility="no"
         android:tintMode="multiply"
@@ -64,9 +60,9 @@
         android:id="@+id/match_num_display"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="27dp"
         android:text="@string/match_num_display"
-        android:textSize="36sp"
+        android:textSize="27sp"
         app:layout_constraintStart_toEndOf="@+id/logo2"
         app:layout_constraintTop_toTopOf="@+id/logo2" />
 
@@ -75,7 +71,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/team_num_display"
-        android:textSize="36sp"
+        android:textSize="27sp"
         app:layout_constraintStart_toEndOf="@+id/logo2"
         app:layout_constraintTop_toBottomOf="@+id/match_num_display" />
 
@@ -84,7 +80,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/auto_stage"
-        android:textSize="36sp"
+        android:textSize="27sp"
         app:layout_constraintStart_toEndOf="@+id/logo2"
         app:layout_constraintTop_toBottomOf="@+id/team_num_display" />
 
